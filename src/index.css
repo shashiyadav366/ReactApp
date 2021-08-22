@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+}
+
+.navbar {
+  background-color: #fff !important;
+}
+
+.navbar-brand {
+  font-size: 1.9em !important;
+  color: #565387 !important;
+  font-weight: 900;
+}
+
+.navbar a {
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+
+.menu_active {
+  font-weight: bold;
+  border-bottom: 2px solid #565387;
+}
+
+.nav-link active {
+}
+.nav-link {
+}
+.container-fliud {
+  width: 100%;
+}
+
+.navbar a:hover {
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .navbar-light .navbar-toggler {
+    margin-left: 100px;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    width: 50%;
+    float: right;
+  }
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+
+  .menu_active {
+    font-weight: bold;
+    border-bottom: none;
+  }
+}
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 90px;
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+#header .brand-name {
+  color: #3498db;
+}
+
+#header h2 {
+  color: #484884;
+  font-size: 24px;
+}
+
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+#header .header-img {
+  text-align: right;
+}
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
